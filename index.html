@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Web Audit - PlatedSites</title>
+    <meta name="description" content="Free website audit tool for restaurants. See how your web presence stacks up across 15 key metrics." />
+    <meta property="og:title" content="Restaurant Web Audit - PlatedSites" />
+    <meta property="og:description" content="Free website audit tool for restaurants. Get a 15-point breakdown in seconds." />
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+  </head>
+  <body class="bg-slate-900">
+    <!-- Netlify Forms Handler -->
+    <!-- This hidden form allows Netlify to detect the form and process submissions -->
+    <form name="audit-signup" method="POST" netlify hidden>
+      <input type="email" name="email" />
+      <input type="text" name="restaurant_name" />
+      <input type="text" name="location" />
+      <input type="number" name="score" />
+    </form>
+
+    <!-- React App Root -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
